@@ -1,0 +1,44 @@
+html, body, #app {
+    height: 100%;
+    margin: 0;
+}
+
+#app {
+    display: flex;
+    flex-direction: row; /* row padrão */
+    /* 
+        flex-wrap: wrap; - quebra linha
+        align-content: center; alinha com wrap como o justify-content
+
+        Alinha do eixo contrário ao flex-direction
+        align-items: center; - verticalmente
+        justify-content: space-around; horizontalmente 
+    */
+}
+
+.box {
+    width: 150px;
+    height: 60px;
+    background: red;
+    margin: 5px;
+    /* 
+        flex: 1;
+        flex-grow: 1;  ocupa toda largura disponível no elemento pai
+        flex-shrink: 1; espreme elemento para  caber no elemento pai
+        flex: 1 0;  grow shrink 
+    */
+}
+
+.red {
+    order: 3; /* organiza ordem de exibicao dos elementos */
+}
+
+.green {
+    background: green;
+    order: 2;
+}
+
+.blue {
+    background: blue;
+    order: 0;
+}
